@@ -1,0 +1,98 @@
+/* Add application styles & imports to this file! */
+@import '~@ionic/angular/css/ionic.bundle.css';
+
+.ubuntu-regular {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title {
+  text-align: center;
+}
+
+:root {
+  --ion-font-family: 'Ubuntu', sans-serif;
+  /* barra superriot */
+  --ion-toolbar-background: #29065a;
+  --ion-toolbar-color: #c29007;
+  --ion-background-color: linear-gradient(180deg, #29065a 0%, #7314fd 100%);
+
+  /* barra inferior */
+  --ion-tab-bar-background: #29065a;
+  --ion-tab-bar-color: #44578a;
+  --ion-tab-bar-color-selected: #c29007;
+  --ion-text-color: white;
+  --ion-text-color-rgb: 2555, 255, 255;
+
+  --ion-card-background: linear-gradient(
+    139deg,
+    #831affab 0%,
+    transparent 100%
+  );
+  --ion-item-background: transparent;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+ion-card {
+  border-radius: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition-duration: 500ms;
+}
+
+ion-card:hover {
+  transform: scale(1.03);
+}
+
+.img-item {
+  padding: 20px;
+  padding-bottom: 0px;
+  width: 100%;
+  max-width: 400px;
+
+  animation: animation-img-item 5s infinite alternate;
+}
+
+ion-thumbnail {
+  animation: animation-item 1s infinite alternate;
+}
+
+@keyframes animation-img-item {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(1deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(-1deg) scale(1.04);
+  }
+}
+
+@keyframes animation-item {
+  0% {
+    transform: translate(0px, 2.5px);
+  }
+  100% {
+    transform: translate(0px, -2.5px);
+  }
+}
+
+.img-tab3{
+  padding: 20px;
+  padding-bottom: 0px;
+  width: 100%;
+  max-width: 400px;
+
+  animation: animation-img-item 5s infinite alternate;
+}
+
+.text-tab3{
+  text-align: center;
+}

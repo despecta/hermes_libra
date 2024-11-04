@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="title"> Home </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="content animate__animated animate__fadeInLeft">
+    <img
+      class="img-item"
+      src="https://images.vexels.com/content/190376/preview/hermes-greek-god-character-478ada.png"
+      alt="mar-morto"
+    />
+    <p>Seu livro em um piscar de olhos! ⚡🦅</p>
+
+    <ion-card [routerLink]="['/tabs/tab2']">
+      <ion-item>
+        <ion-thumbnail slot="start"
+          ><img
+            src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/orange_shoppictbasket_1484336514.png"
+            alt=""
+        /></ion-thumbnail>
+        <ion-label>Comprar agora</ion-label>
+      </ion-item>
+    </ion-card>
+
+    <ion-card [routerLink]="['/tabs/tab3']">
+      <ion-item>
+        <ion-thumbnail slot="start"
+          ><img
+            src="https://png.pngtree.com/png-vector/20221005/ourmid/pngtree-love-symbol-orange-heart-shining-outline-png-image_6281835.png"
+            alt=""
+        /></ion-thumbnail>
+        <ion-label>Apoiar o projeto</ion-label>
+      </ion-item>
+    </ion-card>
+  </div>
+</ion-content>
